@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #efefef;
+}
+
+p {
+    text-align: justify;
+  text-justify: inter-word;
+}
+
+.fejlec {
+    position: relative;
+}
+
+.boritokep {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.profilkep {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.cim {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 8vw;
+}
+
+.nev, #magamrol, #munkatapasztalat, #tanulmanyok, #nyelvtudas {
+    margin: 0 auto;
+}
+
+#munkatapasztalat {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 48em) {
+    .profilkep {
+        bottom: -1.5rem;
+    }
+
+    .nev, #magamrol, #munkatapasztalat, #tanulmanyok, #nyelvtudas {
+        max-width: 66%;
+    }
+
+    .cim {
+        left: 1rem;
+        font-size: 3vw;
+    }
+}
